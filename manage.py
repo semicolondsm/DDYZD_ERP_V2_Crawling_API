@@ -3,9 +3,10 @@ from app import db
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Shell, Manager
 import os
+
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')  
 manager = Manager(app)
-migrate = Migrate(app)
+migrate = Migrate(app, db)
 
 
 def make_shell_context():

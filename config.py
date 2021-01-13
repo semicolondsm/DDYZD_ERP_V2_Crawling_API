@@ -2,8 +2,8 @@ import os
 base_dir = os.path.abspath(os.path.dirname(__file__))
 
 class Config():
-    SECRET_KEY = 'salty salt'
-    JWT_SECRET_KEY = 'ddyzderp'
+    SECRET_KEY = os.getenv('SECRET_KEY')
+    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
     JWT_DECODE_ALGORITHMS = 'HS256'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -15,6 +15,8 @@ class DevelopmentConfig(Config):
     pass
 
 class ProductionConfig(Config):
+    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = 'mysql://'
     pass
 
 config = {

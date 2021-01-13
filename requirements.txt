@@ -31,7 +31,6 @@ flask-shell==0.1.3
 Flask-SocketIO==5.0.1
 Flask-SQLAlchemy==2.4.4
 Flask-WTF==0.14.3
-flasky @ file:///home/skyhelper/Desktop/repository/TIL-BE-/dist/flasky-1.0.0-py3-none-any.whl
 ForgeryPy==0.1
 gevent==20.12.1
 gevent-websocket==0.10.1

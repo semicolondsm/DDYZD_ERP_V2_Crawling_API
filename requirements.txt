@@ -54,7 +54,7 @@ packaging==20.7
 parso==0.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
-prompt-toolkit==3.0.8
+prompt-toolkit==3.0.18
 ptyprocess==0.6.0
 Pygments==2.7.2
 PyJWT==1.7.1
